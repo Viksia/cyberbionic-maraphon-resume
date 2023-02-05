@@ -7,8 +7,9 @@ body {
 	color: #212430;
 }
 
-/* header {
-} */
+header {
+	margin-bottom: 30px;
+}
 
 h1 {
 	margin-top: 60px;
@@ -169,6 +170,7 @@ header img {
 	h1 {
 		font-size: 32px;
 		line-height: 1.15;
+		text-align: center;
 	}
 
 	h1 span {
@@ -178,6 +180,9 @@ header img {
 	p {
 		font-size: 16px;
 		line-height: 24px;
+	}
+	h2 {
+		text-align: center;
 	}
 
 	h3 {
@@ -213,6 +218,67 @@ header img {
 	}
 }
 
+/* Section post*/
+
+.section-post {
+	background: #edf7fa;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.section-post h2 {
+	margin: 0;
+}
+
+h4 {
+	margin: 0;
+	font-size: 26px;
+	line-height: 38px;
+	margin-bottom: 30px;
+}
+
+.blocks-posts {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.blocks-posts .post {
+	max-width: 420px;
+	border-radius: 4px;
+	background-color: white;
+	padding: 25px;
+	margin-bottom: 15px;
+}
+.blocks-posts span {
+	font-size: 18px;
+	color: #21243d;
+	padding-right: 30px;
+}
+
+.blocks-posts .post p {
+	border-bottom: none;
+}
+@media (max-width: 768px) {
+	.blocks-posts {
+		justify-content: space-around;
+	}
+
+	.blocks-posts .post {
+		margin-bottom: 17px;
+	}
+
+	h4 {
+		font-size: 22px;
+	}
+
+	.blocks-posts span {
+		font-size: 16px;
+	}
+
+	.blocks-posts h2 {
+	}
+}
 /* Feature works*/
 
 .work {
@@ -377,6 +443,11 @@ footer p {
 }
 
 .work a {
+	text-decoration: none;
+	color: #212430;
+}
+
+.blocks-posts .post a {
 	text-decoration: none;
 	color: #212430;
 }
